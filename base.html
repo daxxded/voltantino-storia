@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viaggio tra i Longobardi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to right, #3a3a3a, #5d5d5d);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      max-width: 300px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    .card-content p {
+      font-size: 1rem;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Viaggio tra i Longobardi</h1>
+    <p>Un'avventura storica tra Castelseprio, Brescia e Cividale</p>
+  </header>
+  <main class="container">
+    <div class="card" onclick="location.href='castelseprio.html'">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.CKyMTWpLiN10XZXIysvFVAHaE8&pid=Api" alt="Castelseprio">
+      <div class="card-content">
+        <h2>Castelseprio</h2>
+        <p>Parco Archeologico immerso nel verde, un tuffo nelle radici longobarde tra rovine e affreschi.</p>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='brescia.html'">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.tc904NbvL9wefnFSeMVbHQHaE6?pid=Api" alt="Brescia - Museo di Santa Giulia">
+      <div class="card-content">
+        <h2>Museo di Santa Giulia</h2>
+        <p>Un antico monastero trasformato in museo, dove storia longobarda e arte si fondono in un’esperienza immersiva.</p>
+      </div>
+    </div>
+    <div class="card" onclick="location.href='cividale.html'">
+      <img src="https://tse3.mm.bing.net/th?id=OIP.dLgX3HBYjB_IaHXQYBqXPAHaFc&pid=Api" alt="Cividale del Friuli">
+      <div class="card-content">
+        <h2>Cividale del Friuli</h2>
+        <p>Il Tempietto Longobardo, perla del patrimonio UNESCO, tra misteri architettonici e simboli del potere longobardo.</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
