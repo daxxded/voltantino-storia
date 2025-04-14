@@ -61,6 +61,27 @@
       color: #333;
       margin-top: 0.5rem;
     }
+    .qr-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 300px;
+      transition: transform 0.3s ease;
+      text-align: center;
+      padding: 1rem;
+    }
+    .qr-card img {
+      width: 200px;
+      height: auto;
+      margin-top: 1rem;
+    }
+    .qr-card h2 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .qr-card:hover {
+      transform: scale(1.05);
+    }
     @keyframes fadeInDown {
       from {
         opacity: 0;
@@ -107,6 +128,10 @@
         <h2>Cividale del Friuli</h2>
         <p>Il Tempietto Longobardo, perla del patrimonio UNESCO, tra misteri architettonici e simboli del potere longobardo.</p>
       </div>
+    </div>
+    <div class="qr-card">
+      <h2>Burle sui longobardi</h2>
+      <img src="audio_qr.png" alt="QR Burle sui longobardi">
     </div>
   </main>
 </body>
